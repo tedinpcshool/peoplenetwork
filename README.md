@@ -11,3 +11,4 @@ This is app for people network
 ### 個人資料
 ### 身份認證
 採用 電話認證，註冊採用手機號碼確認。
+
