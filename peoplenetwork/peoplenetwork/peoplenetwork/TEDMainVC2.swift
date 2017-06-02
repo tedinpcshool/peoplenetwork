@@ -1,5 +1,5 @@
 //
-//  TEDRegisterVC.swift
+//  TEDMainVC2.swift
 //  peoplenetwork
 //
 //  Created by ios on 2017/6/2.
@@ -8,28 +8,10 @@
 
 import UIKit
 
-class TEDUserInfo:Any{
+class TEDMainVC2: UIViewController {
+
     var name:String?
-    var phone:String?
-    var email:String?
-}
-
-
-class TEDRegisterVC: UIViewController {
-    var userInfo:TEDUserInfo?
-    @IBOutlet weak var txtName: UITextField!
-    @IBAction func pushBtn(_ sender: UIButton) {
-        
-        if userInfo == nil{
-            let delegate=UIApplication.shared.delegate as! AppDelegate
-            if delegate.userInfo == nil{                delegate.userInfo=TEDUserInfo()
-            }
-            userInfo=delegate.userInfo
-            
-        }
-        userInfo?.name=txtName.text
-        
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,7 +22,9 @@ class TEDRegisterVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden=false
+    }
 
     /*
     // MARK: - Navigation

@@ -11,8 +11,33 @@ import UIKit
 class ViewController: UIViewController {
     var userInfo:TEDUserInfo?
     
+    @IBOutlet weak var seg: UISegmentedControl!
+    
     @IBOutlet weak var lblName: UILabel!
     
+    @IBAction func pushBtn(_ sender: UIButton) {
+        switch seg.selectedSegmentIndex {
+        case 0:
+            
+            let vc1=storyboard?.instantiateViewController(withIdentifier: "TEDMainVC1")
+            // UIViewController
+            
+            self.navigationController?.pushViewController(vc1!, animated: true)
+            
+            
+            
+        case 1:
+            let vc2=storyboard?.instantiateViewController(withIdentifier: "TEDMainVC2") as! TEDMainVC2
+            
+            vc2.name = "TED"
+            
+            self.navigationController?.pushViewController(vc2, animated: true)
+        default:
+            print("no action")
+        }
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
