@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8145390B1EE17A4D00BDCC29 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814539091EE17A4D00BDCC29 /* Register.storyboard */; };
+		8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145390C1EE17A6E00BDCC29 /* TEDRegisterVC.swift */; };
 		81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81694F901EDEDE6D00CEA036 /* AppDelegate.swift */; };
 		81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81694F921EDEDE6D00CEA036 /* ViewController.swift */; };
 		81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F941EDEDE6D00CEA036 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		0AFE828EE98015453DCC6273 /* Pods_peoplenetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_peoplenetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172C703209DB416F66595370 /* Pods-peoplenetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peoplenetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-peoplenetwork/Pods-peoplenetwork.release.xcconfig"; sourceTree = "<group>"; };
 		52C98FB2AFF3E237EB0A1881 /* Pods-peoplenetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peoplenetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-peoplenetwork/Pods-peoplenetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		8145390A1EE17A4D00BDCC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Register.storyboard; sourceTree = "<group>"; };
+		8145390C1EE17A6E00BDCC29 /* TEDRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDRegisterVC.swift; sourceTree = "<group>"; };
 		81694F8D1EDEDE6D00CEA036 /* peoplenetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peoplenetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81694F901EDEDE6D00CEA036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81694F921EDEDE6D00CEA036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		814539081EE17A1D00BDCC29 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				814539091EE17A4D00BDCC29 /* Register.storyboard */,
+				8145390C1EE17A6E00BDCC29 /* TEDRegisterVC.swift */,
+			);
+			name = register;
+			sourceTree = "<group>";
+		};
 		81694F841EDEDE6D00CEA036 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +74,7 @@
 		81694F8F1EDEDE6D00CEA036 /* peoplenetwork */ = {
 			isa = PBXGroup;
 			children = (
+				814539081EE17A1D00BDCC29 /* register */,
 				81694F901EDEDE6D00CEA036 /* AppDelegate.swift */,
 				81694F921EDEDE6D00CEA036 /* ViewController.swift */,
 				81694F941EDEDE6D00CEA036 /* Main.storyboard */,
@@ -153,6 +167,7 @@
 				81694F9B1EDEDE6D00CEA036 /* LaunchScreen.storyboard in Resources */,
 				81694F981EDEDE6D00CEA036 /* Assets.xcassets in Resources */,
 				81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */,
+				8145390B1EE17A4D00BDCC29 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */,
 				81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */,
 				81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */,
 			);
@@ -219,6 +235,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		814539091EE17A4D00BDCC29 /* Register.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8145390A1EE17A4D00BDCC29 /* Base */,
+			);
+			name = Register.storyboard;
+			sourceTree = "<group>";
+		};
 		81694F941EDEDE6D00CEA036 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,6 +398,7 @@
 				81694FA11EDEDE6D00CEA036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

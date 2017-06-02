@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var userInfo:TEDUserInfo?
+    
+    @IBOutlet weak var lblName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +26,12 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         print("viewWillAppear")
+        if userInfo == nil{
+            let delegate=UIApplication.shared.delegate as! AppDelegate
+            userInfo=delegate.userInfo
+        }
+
+        lblName.text=userInfo?.name
     }
     
     override func viewDidAppear(_ animated: Bool) {
