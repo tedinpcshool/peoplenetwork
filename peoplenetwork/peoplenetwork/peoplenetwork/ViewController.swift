@@ -20,11 +20,8 @@ class ViewController: UIViewController {
         case 0:
             
             let vc1=storyboard?.instantiateViewController(withIdentifier: "TEDMainVC1")
-            // UIViewController
-            
+            // UIViewController            
             self.navigationController?.pushViewController(vc1!, animated: true)
-            
-            
             
         case 1:
             let vc2=storyboard?.instantiateViewController(withIdentifier: "TEDMainVC2") as! TEDMainVC2
@@ -41,7 +38,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.writeFile()
+        
+        print(TEDBlackDog.getSpice())
+        
+        let smallDog=TEDBlackDog()
+        let bigDog=TEDBlackDog()
+        
+        print(smallDog.getNumOfears())
+        bigDog.numOfEars=1
+        print(bigDog.getNumOfears())
+        
+        
+        
+//        self.writeFile()
     }
 
     override func didReceiveMemoryWarning() {

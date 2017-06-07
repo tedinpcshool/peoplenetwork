@@ -16,8 +16,20 @@
 		81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F941EDEDE6D00CEA036 /* Main.storyboard */; };
 		81694F981EDEDE6D00CEA036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81694F971EDEDE6D00CEA036 /* Assets.xcassets */; };
 		81694F9B1EDEDE6D00CEA036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F991EDEDE6D00CEA036 /* LaunchScreen.storyboard */; };
+		81F866181EE5714700A48685 /* peoplenetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F866171EE5714700A48685 /* peoplenetworkTests.swift */; };
+		81F866301EE584CB00A48685 /* TEDBlackDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */; };
 		C20755994AEB9AAE83154631 /* Pods_peoplenetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFE828EE98015453DCC6273 /* Pods_peoplenetwork.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81F8661A1EE5714700A48685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81694F851EDEDE6D00CEA036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81694F8C1EDEDE6D00CEA036;
+			remoteInfo = peoplenetwork;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0AFE828EE98015453DCC6273 /* Pods_peoplenetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_peoplenetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +46,10 @@
 		81694F971EDEDE6D00CEA036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81694F9A1EDEDE6D00CEA036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81694F9C1EDEDE6D00CEA036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F866151EE5714700A48685 /* peoplenetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = peoplenetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F866171EE5714700A48685 /* peoplenetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peoplenetworkTests.swift; sourceTree = "<group>"; };
+		81F866191EE5714700A48685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDBlackDog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C20755994AEB9AAE83154631 /* Pods_peoplenetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F866121EE5714700A48685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				81694F8F1EDEDE6D00CEA036 /* peoplenetwork */,
+				81F866161EE5714700A48685 /* peoplenetworkTests */,
 				81694F8E1EDEDE6D00CEA036 /* Products */,
 				912C8366419FC77EB5E8FF6D /* Pods */,
 				DC84BBB4F69BC94CBAFE5737 /* Frameworks */,
@@ -71,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				81694F8D1EDEDE6D00CEA036 /* peoplenetwork.app */,
+				81F866151EE5714700A48685 /* peoplenetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,8 +112,18 @@
 				81694F9C1EDEDE6D00CEA036 /* Info.plist */,
 				813BBF0C1EE199CE00A159F6 /* TEDMainVC1.swift */,
 				813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */,
+				81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */,
 			);
 			path = peoplenetwork;
+			sourceTree = "<group>";
+		};
+		81F866161EE5714700A48685 /* peoplenetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				81F866171EE5714700A48685 /* peoplenetworkTests.swift */,
+				81F866191EE5714700A48685 /* Info.plist */,
+			);
+			path = peoplenetworkTests;
 			sourceTree = "<group>";
 		};
 		912C8366419FC77EB5E8FF6D /* Pods */ = {
@@ -131,6 +166,24 @@
 			productReference = 81694F8D1EDEDE6D00CEA036 /* peoplenetwork.app */;
 			productType = "com.apple.product-type.application";
 		};
+		81F866141EE5714700A48685 /* peoplenetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F8661E1EE5714700A48685 /* Build configuration list for PBXNativeTarget "peoplenetworkTests" */;
+			buildPhases = (
+				81F866111EE5714700A48685 /* Sources */,
+				81F866121EE5714700A48685 /* Frameworks */,
+				81F866131EE5714700A48685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81F8661B1EE5714700A48685 /* PBXTargetDependency */,
+			);
+			name = peoplenetworkTests;
+			productName = peoplenetworkTests;
+			productReference = 81F866151EE5714700A48685 /* peoplenetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,6 +197,11 @@
 					81694F8C1EDEDE6D00CEA036 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					81F866141EE5714700A48685 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 81694F8C1EDEDE6D00CEA036;
 					};
 				};
 			};
@@ -161,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				81694F8C1EDEDE6D00CEA036 /* peoplenetwork */,
+				81F866141EE5714700A48685 /* peoplenetworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +233,13 @@
 				81694F981EDEDE6D00CEA036 /* Assets.xcassets in Resources */,
 				81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */,
 				8145390B1EE17A4D00BDCC29 /* Register.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F866131EE5714700A48685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F866301EE584CB00A48685 /* TEDBlackDog.swift in Sources */,
 				8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */,
 				81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */,
 				81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */,
@@ -240,7 +307,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81F866111EE5714700A48685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F866181EE5714700A48685 /* peoplenetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81F8661B1EE5714700A48685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81694F8C1EDEDE6D00CEA036 /* peoplenetwork */;
+			targetProxy = 81F8661A1EE5714700A48685 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		814539091EE17A4D00BDCC29 /* Register.storyboard */ = {
@@ -387,6 +470,32 @@
 			};
 			name = Release;
 		};
+		81F8661C1EE5714700A48685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = peoplenetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.peoplenetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/peoplenetwork.app/peoplenetwork";
+			};
+			name = Debug;
+		};
+		81F8661D1EE5714700A48685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = peoplenetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.peoplenetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/peoplenetwork.app/peoplenetwork";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +516,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		81F8661E1EE5714700A48685 /* Build configuration list for PBXNativeTarget "peoplenetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F8661C1EE5714700A48685 /* Debug */,
+				81F8661D1EE5714700A48685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

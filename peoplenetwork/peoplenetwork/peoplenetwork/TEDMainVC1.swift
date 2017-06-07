@@ -28,6 +28,16 @@ class TEDMainVC1: UIViewController {
         self.navigationController?.isNavigationBarHidden=true
     }
 
+    
+    func addThreeNum(){
+        
+    }
+    
+    
+    class func addTwoNum(a:Int,b:Int)->Int{
+        return a+b
+    }
+    
     /*
     // MARK: - Navigation
 
