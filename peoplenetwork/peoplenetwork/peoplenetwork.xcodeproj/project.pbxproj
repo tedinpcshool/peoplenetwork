@@ -11,6 +11,7 @@
 		813BBF0F1EE199DC00A159F6 /* TEDMainVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */; };
 		8145390B1EE17A4D00BDCC29 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814539091EE17A4D00BDCC29 /* Register.storyboard */; };
 		8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145390C1EE17A6E00BDCC29 /* TEDRegisterVC.swift */; };
+		8153CC0C1EF14BB800D27046 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8153CC0B1EF14BB800D27046 /* GoogleService-Info.plist */; };
 		81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81694F901EDEDE6D00CEA036 /* AppDelegate.swift */; };
 		81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81694F921EDEDE6D00CEA036 /* ViewController.swift */; };
 		81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F941EDEDE6D00CEA036 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC2.swift; sourceTree = "<group>"; };
 		8145390A1EE17A4D00BDCC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Register.storyboard; sourceTree = "<group>"; };
 		8145390C1EE17A6E00BDCC29 /* TEDRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDRegisterVC.swift; sourceTree = "<group>"; };
+		8153CC0B1EF14BB800D27046 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81694F8D1EDEDE6D00CEA036 /* peoplenetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peoplenetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81694F901EDEDE6D00CEA036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81694F921EDEDE6D00CEA036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		81694F8F1EDEDE6D00CEA036 /* peoplenetwork */ = {
 			isa = PBXGroup;
 			children = (
+				8153CC0B1EF14BB800D27046 /* GoogleService-Info.plist */,
 				814539081EE17A1D00BDCC29 /* register */,
 				81694F901EDEDE6D00CEA036 /* AppDelegate.swift */,
 				81694F921EDEDE6D00CEA036 /* ViewController.swift */,
@@ -231,6 +234,7 @@
 			files = (
 				81694F9B1EDEDE6D00CEA036 /* LaunchScreen.storyboard in Resources */,
 				81694F981EDEDE6D00CEA036 /* Assets.xcassets in Resources */,
+				8153CC0C1EF14BB800D27046 /* GoogleService-Info.plist in Resources */,
 				81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */,
 				8145390B1EE17A4D00BDCC29 /* Register.storyboard in Resources */,
 			);
@@ -451,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = peoplenetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abc.peoplenetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxosoft.peoplenetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -464,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = peoplenetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abc.peoplenetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxosoft.peoplenetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -524,6 +528,7 @@
 				81F8661D1EE5714700A48685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

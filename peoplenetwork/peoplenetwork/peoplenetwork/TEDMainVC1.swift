@@ -7,11 +7,34 @@
 //
 
 import UIKit
-
+import Firebase
 class TEDMainVC1: UIViewController {
-
+    
+  
+    @IBOutlet weak var lbl1: UILabel!
+    
+    var ref: FIRDatabaseReference!
     @IBAction func pushBtn(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+//        ref = Database.database().reference()
+        ref = FIRDatabase.database().reference()
+//        var data={"aa":"1"}
+        switch sender.tag {
+        case 0:
+            self.ref.setValue(["user":"TOM"])
+        case 1:
+            self.ref.observeSingleEvent(of: .value, with: { (snapshot) in
+                let v = snapshot.value as? NSDictionary
+                self.lbl1.text=v?["user"] as? String
+                })
+        default:
+            print("aaa")
+            
+        }
+        
+        
+//        self.ref.setValue(["username": "a"])
+//        self.ref.childByAutoId().updateChildValues(["unam":"b"])
+//        self.ref.child("-KmaYtXI1STjgyCQfBRU").childByAutoId().updateChildValues(["unam":"b"])
         
     }
     override func viewDidLoad() {
@@ -29,8 +52,8 @@ class TEDMainVC1: UIViewController {
     }
 
     
-    func addThreeNum(){
-        
+    func addThreeNum()->Int{
+        return 1
     }
     
     
