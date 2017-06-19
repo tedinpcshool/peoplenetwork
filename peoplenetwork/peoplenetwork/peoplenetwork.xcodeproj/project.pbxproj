@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811D56C91EF7F5CE00E78185 /* TEDMainVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D56C81EF7F5CE00E78185 /* TEDMainVC3.swift */; };
 		813BBF0D1EE199CE00A159F6 /* TEDMainVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BBF0C1EE199CE00A159F6 /* TEDMainVC1.swift */; };
 		813BBF0F1EE199DC00A159F6 /* TEDMainVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */; };
 		8145390B1EE17A4D00BDCC29 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814539091EE17A4D00BDCC29 /* Register.storyboard */; };
@@ -36,6 +37,7 @@
 		0AFE828EE98015453DCC6273 /* Pods_peoplenetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_peoplenetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172C703209DB416F66595370 /* Pods-peoplenetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peoplenetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-peoplenetwork/Pods-peoplenetwork.release.xcconfig"; sourceTree = "<group>"; };
 		52C98FB2AFF3E237EB0A1881 /* Pods-peoplenetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peoplenetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-peoplenetwork/Pods-peoplenetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		811D56C81EF7F5CE00E78185 /* TEDMainVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC3.swift; sourceTree = "<group>"; };
 		813BBF0C1EE199CE00A159F6 /* TEDMainVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC1.swift; sourceTree = "<group>"; };
 		813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC2.swift; sourceTree = "<group>"; };
 		8145390A1EE17A4D00BDCC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Register.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				813BBF0C1EE199CE00A159F6 /* TEDMainVC1.swift */,
 				813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */,
 				81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */,
+				811D56C81EF7F5CE00E78185 /* TEDMainVC3.swift */,
 			);
 			path = peoplenetwork;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */,
 				81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */,
 				813BBF0F1EE199DC00A159F6 /* TEDMainVC2.swift in Sources */,
+				811D56C91EF7F5CE00E78185 /* TEDMainVC3.swift in Sources */,
 				813BBF0D1EE199CE00A159F6 /* TEDMainVC1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
