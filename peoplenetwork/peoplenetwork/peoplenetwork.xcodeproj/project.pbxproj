@@ -13,6 +13,9 @@
 		8145390B1EE17A4D00BDCC29 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814539091EE17A4D00BDCC29 /* Register.storyboard */; };
 		8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145390C1EE17A6E00BDCC29 /* TEDRegisterVC.swift */; };
 		8153CC0C1EF14BB800D27046 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8153CC0B1EF14BB800D27046 /* GoogleService-Info.plist */; };
+		815E80C91EFA946500D47C76 /* TEDTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E80C81EFA946500D47C76 /* TEDTableVC.swift */; };
+		815E80CB1EFA958500D47C76 /* TEDPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E80CA1EFA958500D47C76 /* TEDPerson.swift */; };
+		815E80CD1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E80CC1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift */; };
 		81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81694F901EDEDE6D00CEA036 /* AppDelegate.swift */; };
 		81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81694F921EDEDE6D00CEA036 /* ViewController.swift */; };
 		81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F941EDEDE6D00CEA036 /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		8145390A1EE17A4D00BDCC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Register.storyboard; sourceTree = "<group>"; };
 		8145390C1EE17A6E00BDCC29 /* TEDRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDRegisterVC.swift; sourceTree = "<group>"; };
 		8153CC0B1EF14BB800D27046 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		815E80C81EFA946500D47C76 /* TEDTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDTableVC.swift; sourceTree = "<group>"; };
+		815E80CA1EFA958500D47C76 /* TEDPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TEDPerson.swift; path = model/TEDPerson.swift; sourceTree = "<group>"; };
+		815E80CC1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDPersonTableViewCell.swift; sourceTree = "<group>"; };
 		81694F8D1EDEDE6D00CEA036 /* peoplenetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peoplenetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81694F901EDEDE6D00CEA036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81694F921EDEDE6D00CEA036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 				813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */,
 				81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */,
 				811D56C81EF7F5CE00E78185 /* TEDMainVC3.swift */,
+				815E80C81EFA946500D47C76 /* TEDTableVC.swift */,
+				815E80CA1EFA958500D47C76 /* TEDPerson.swift */,
+				815E80CC1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift */,
 			);
 			path = peoplenetwork;
 			sourceTree = "<group>";
@@ -306,8 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F866301EE584CB00A48685 /* TEDBlackDog.swift in Sources */,
+				815E80C91EFA946500D47C76 /* TEDTableVC.swift in Sources */,
+				815E80CD1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift in Sources */,
 				8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */,
 				81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */,
+				815E80CB1EFA958500D47C76 /* TEDPerson.swift in Sources */,
 				81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */,
 				813BBF0F1EE199DC00A159F6 /* TEDMainVC2.swift in Sources */,
 				811D56C91EF7F5CE00E78185 /* TEDMainVC3.swift in Sources */,

@@ -23,7 +23,7 @@ class TEDMainVC3: UIViewController {
         
         let tmpStr = "abcde"
         
-        tmpStr.data(using: <#T##String.Encoding#>)  //String -> Data
+//        tmpStr.data(using: <#T##String.Encoding#>)  //String -> Data
         
         
         
@@ -46,7 +46,7 @@ class TEDMainVC3: UIViewController {
             let path = dir.appendingPathComponent(file)
             print("path = \(path)")
             
-            text.write(to: <#T##URL#>, atomically: <#T##Bool#>, encoding: <#T##String.Encoding#>)
+//            text.write(to: <#T##URL#>, atomically: <#T##Bool#>, encoding: <#T##String.Encoding#>)
             
             //writing
             do {
