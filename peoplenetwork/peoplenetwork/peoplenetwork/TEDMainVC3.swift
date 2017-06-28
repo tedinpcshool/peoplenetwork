@@ -8,14 +8,58 @@
 
 import UIKit
 import SwiftyJSON
+import Firebase
 
-class TEDMainVC3: UIViewController {
+class TEDMainVC3: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
+    
+    var orders:Array<[String:Any]>!=[]
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("orders.count=\(orders.count)")
+        return orders!.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+        if let order = orders[indexPath.row]["RoomNum"]{
+            let str = "房號 " + String(describing: order) + "之訂單"
+            cell.textLabel?.text = str
+        }
 
+        return cell
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
+        var JSON = ref.child("RoomOrder").observe(.value, with: { (snap) in
+            
+            let value = snap.value as? NSArray
+            
+            self.orders = value as! Array<[String : Any]>
+            
+            self.tableView.reloadData()
+            
+        }){(error) in
+            print(error.localizedDescription)
+        }
+        
+        // Do any additional setup after loading the view.
+
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func writeFile(){
+    
         // requirement  String -> JSON
         
         let jsonStr = "{ \"people\": [{ \"firstName\": \"Paul\", \"lastName\": \"Hudson\", \"isAlive\": true }, { \"firstName\": \"Angela\", \"lastName\": \"Merkel\", \"isAlive\": true }, { \"firstName\": \"George\", \"lastName\": \"Washington\", \"isAlive\": false } ] }"
@@ -23,7 +67,7 @@ class TEDMainVC3: UIViewController {
         
         let tmpStr = "abcde"
         
-//        tmpStr.data(using: <#T##String.Encoding#>)  //String -> Data
+        //        tmpStr.data(using: <#T##String.Encoding#>)  //String -> Data
         
         
         
@@ -46,7 +90,7 @@ class TEDMainVC3: UIViewController {
             let path = dir.appendingPathComponent(file)
             print("path = \(path)")
             
-//            text.write(to: <#T##URL#>, atomically: <#T##Bool#>, encoding: <#T##String.Encoding#>)
+            //            text.write(to: <#T##URL#>, atomically: <#T##Bool#>, encoding: <#T##String.Encoding#>)
             
             //writing
             do {
@@ -64,13 +108,9 @@ class TEDMainVC3: UIViewController {
             }
             catch {/* error handling here */}
         }
-        
+    
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
 
     /*

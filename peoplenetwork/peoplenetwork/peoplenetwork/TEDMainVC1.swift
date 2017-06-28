@@ -8,9 +8,18 @@
 
 import UIKit
 import Firebase
+
+class OrderInfo:Any{
+    var RoomNum:Int?
+    var foods:Array<Any>?
+    var status:String?
+    
+}
+
+
 class TEDMainVC1: UIViewController {
     
-  
+  var orders:Array<[String:Any]>!=[]
     @IBOutlet weak var lbl1: UILabel!
     
     var ref: FIRDatabaseReference!
@@ -37,9 +46,57 @@ class TEDMainVC1: UIViewController {
 //        self.ref.child("-KmaYtXI1STjgyCQfBRU").childByAutoId().updateChildValues(["unam":"b"])
         
     }
+    
+    
+    func writeOrderToRTDB(){
+        let order1=["foodName":"rice","price":100] as [String : Any]
+        let order2=["foodName":"noodle","price":200]as [String : Any]
+        let orders=[order1,order2]
+        
+        
+        let orderInfo1=["RoomNum":101,"foods":orders,"status":"not ready"] as [String : Any];
+        
+        
+        
+        let orderInfo2=["RoomNum":102,"foods":orders,"status":"ready"] as [String : Any];
+        
+        
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
+        
+        let roomID="101"
+        
+        let key=ref.child("RoomOrder").child(roomID).childByAutoId().key
+        ref.child("RoomOrder").child(roomID).child(key).setValue(orderInfo2)
+
+        ref.child("RoomOrder").observe(.value, with: { (snap) in
+            let value = snap.value as? NSDictionary
+            
+            let keys = value?.allKeys
+            
+            let obj = value?.object(forKey: keys?[0])
+            
+            obj
+            
+            
+            print(value)
+            
+//            self.orders = value as! Array<[String : Any]>
+            
+        }){(error) in
+            print(error.localizedDescription)
+        }
+        
+//        print(self.orders)
+        
+        
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.writeOrderToRTDB()
         // Do any additional setup after loading the view.
     }
 

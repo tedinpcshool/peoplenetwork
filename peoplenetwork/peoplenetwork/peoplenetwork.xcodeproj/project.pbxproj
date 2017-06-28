@@ -23,6 +23,7 @@
 		81694F9B1EDEDE6D00CEA036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F991EDEDE6D00CEA036 /* LaunchScreen.storyboard */; };
 		81F866181EE5714700A48685 /* peoplenetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F866171EE5714700A48685 /* peoplenetworkTests.swift */; };
 		81F866301EE584CB00A48685 /* TEDBlackDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */; };
+		81FF7A621F03E03B00FE0EFD /* TEDMainVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF7A611F03E03B00FE0EFD /* TEDMainVC4.swift */; };
 		C20755994AEB9AAE83154631 /* Pods_peoplenetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFE828EE98015453DCC6273 /* Pods_peoplenetwork.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		81F866171EE5714700A48685 /* peoplenetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peoplenetworkTests.swift; sourceTree = "<group>"; };
 		81F866191EE5714700A48685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDBlackDog.swift; sourceTree = "<group>"; };
+		81FF7A611F03E03B00FE0EFD /* TEDMainVC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				815E80C81EFA946500D47C76 /* TEDTableVC.swift */,
 				815E80CA1EFA958500D47C76 /* TEDPerson.swift */,
 				815E80CC1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift */,
+				81FF7A611F03E03B00FE0EFD /* TEDMainVC4.swift */,
 			);
 			path = peoplenetwork;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				TargetAttributes = {
 					81694F8C1EDEDE6D00CEA036 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YA254K67W3;
 						ProvisioningStyle = Automatic;
 					};
 					81F866141EE5714700A48685 = {
@@ -315,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F866301EE584CB00A48685 /* TEDBlackDog.swift in Sources */,
+				81FF7A621F03E03B00FE0EFD /* TEDMainVC4.swift in Sources */,
 				815E80C91EFA946500D47C76 /* TEDTableVC.swift in Sources */,
 				815E80CD1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift in Sources */,
 				8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */,
@@ -469,6 +474,7 @@
 			baseConfigurationReference = 52C98FB2AFF3E237EB0A1881 /* Pods-peoplenetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YA254K67W3;
 				INFOPLIST_FILE = peoplenetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxosoft.peoplenetwork;
@@ -482,6 +488,7 @@
 			baseConfigurationReference = 172C703209DB416F66595370 /* Pods-peoplenetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YA254K67W3;
 				INFOPLIST_FILE = peoplenetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxosoft.peoplenetwork;
