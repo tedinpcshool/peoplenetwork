@@ -21,6 +21,7 @@
 		81694F961EDEDE6D00CEA036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F941EDEDE6D00CEA036 /* Main.storyboard */; };
 		81694F981EDEDE6D00CEA036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81694F971EDEDE6D00CEA036 /* Assets.xcassets */; };
 		81694F9B1EDEDE6D00CEA036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81694F991EDEDE6D00CEA036 /* LaunchScreen.storyboard */; };
+		81B1201F1F066DCE00E65022 /* TEDHTMLParserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B1201E1F066DCE00E65022 /* TEDHTMLParserVC.swift */; };
 		81F866181EE5714700A48685 /* peoplenetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F866171EE5714700A48685 /* peoplenetworkTests.swift */; };
 		81F866301EE584CB00A48685 /* TEDBlackDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8662F1EE584CB00A48685 /* TEDBlackDog.swift */; };
 		81FF7A621F03E03B00FE0EFD /* TEDMainVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF7A611F03E03B00FE0EFD /* TEDMainVC4.swift */; };
@@ -57,6 +58,7 @@
 		81694F971EDEDE6D00CEA036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81694F9A1EDEDE6D00CEA036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81694F9C1EDEDE6D00CEA036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81B1201E1F066DCE00E65022 /* TEDHTMLParserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDHTMLParserVC.swift; sourceTree = "<group>"; };
 		81F866151EE5714700A48685 /* peoplenetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = peoplenetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F866171EE5714700A48685 /* peoplenetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peoplenetworkTests.swift; sourceTree = "<group>"; };
 		81F866191EE5714700A48685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				815E80CA1EFA958500D47C76 /* TEDPerson.swift */,
 				815E80CC1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift */,
 				81FF7A611F03E03B00FE0EFD /* TEDMainVC4.swift */,
+				81B1201E1F066DCE00E65022 /* TEDHTMLParserVC.swift */,
 			);
 			path = peoplenetwork;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B1201F1F066DCE00E65022 /* TEDHTMLParserVC.swift in Sources */,
 				81F866301EE584CB00A48685 /* TEDBlackDog.swift in Sources */,
 				81FF7A621F03E03B00FE0EFD /* TEDMainVC4.swift in Sources */,
 				815E80C91EFA946500D47C76 /* TEDTableVC.swift in Sources */,

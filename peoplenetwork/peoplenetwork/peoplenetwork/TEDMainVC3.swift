@@ -35,8 +35,8 @@ class TEDMainVC3: UIViewController,UITableViewDataSource,UITableViewDelegate {
         super.viewDidLoad()
 
         
-        var ref: FIRDatabaseReference!
-        ref = FIRDatabase.database().reference()
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
         var JSON = ref.child("RoomOrder").observe(.value, with: { (snap) in
             
             let value = snap.value as? NSArray

@@ -10,5 +10,5 @@ target 'peoplenetwork' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'  
   pod 'Firebase/Core'
-
+  pod 'SwiftSoup'
 end

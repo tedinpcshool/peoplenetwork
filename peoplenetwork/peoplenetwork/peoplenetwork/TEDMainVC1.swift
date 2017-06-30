@@ -22,10 +22,10 @@ class TEDMainVC1: UIViewController {
   var orders:Array<[String:Any]>!=[]
     @IBOutlet weak var lbl1: UILabel!
     
-    var ref: FIRDatabaseReference!
+    var ref: DatabaseReference!
     @IBAction func pushBtn(_ sender: UIButton) {
 //        ref = Database.database().reference()
-        ref = FIRDatabase.database().reference()
+        ref = Database.database().reference()
 //        var data={"aa":"1"}
         switch sender.tag {
         case 0:
@@ -61,8 +61,8 @@ class TEDMainVC1: UIViewController {
         let orderInfo2=["RoomNum":102,"foods":orders,"status":"ready"] as [String : Any];
         
         
-        var ref: FIRDatabaseReference!
-        ref = FIRDatabase.database().reference()
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
         
         let roomID="101"
         
