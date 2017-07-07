@@ -8,12 +8,16 @@
 
 import UIKit
 import SwiftSoup
+import SwiftyJSON
 
 class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
- var html : String!
+    var html : String!
     var qIndex=1
-    
     var myTimer:Timer!
+    
+    var qTitleJSON:JSON!
+    
+    
     
     @IBOutlet weak var webView: UIWebView!
     
@@ -21,14 +25,78 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
         super.viewDidLoad()
         
         
-        myTimer=Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(loadHTML), userInfo: nil, repeats: true)
-        
+        myTimer=Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(loadHTML), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
     }
 
     
-    
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        print("@@- webViewDidStartLoad")
+        var tmpStr=""
+        let htmlStr = webView.stringByEvaluatingJavaScript(from: "document.body.innerHTML")!
+        var json:JSON!
+        do{
+            let doc: Document = try! SwiftSoup.parse(htmlStr)
+            let qTitle = try doc.select("div.ng-scope header").first()
+
+            
+            if qTitle != nil{
+//                try qTitle?.append(qTitle!.html())
+                
+                try tmpStr=qTitle!.html()
+                
+                json=JSON(["qTitle":tmpStr])
+                let ans = try doc.select("md-radio-group md-radio-button")
+                var tmpIndex=1
+                var ans1Str=""
+                var ans2Str=""
+                var ans3Str=""
+                var ans4Str=""
+                
+                for ans1 in ans.array(){
+                    switch tmpIndex {
+                    case 1:
+                        ans1Str=try ans1.attr("aria-label")
+                    case 2:
+                        ans2Str=try ans1.attr("aria-label")
+                    case 3:
+                        ans3Str=try ans1.attr("aria-label")
+                    case 4:
+                        ans4Str=try ans1.attr("aria-label")
+                    default:
+                        break
+                    }
+//                    let tmpXX="ans"+String(tmpIndex)
+//                    let tmpStr=try ans1.attr("aria-label")
+//                    print("tmpStr=\(tmpStr)")
+//                    json[tmpXX].string = tmpStr
+                    tmpIndex+=1
+//                    try tmpStr=tmpStr+"$"+ans1.attr("aria-label")
+                }
+                
+                json=JSON(["qTitle":tmpStr,"ans1":ans1Str,"ans2":ans2Str,"ans3":ans3Str,"ans4":ans4Str])
+                print("json = \(json)")
+                
+                qTitleJSON[qIndex]=JSON(json)
+            }else{
+//                print("element is nil,html is \(htmlStr)")
+            }
+            
+            
+            
+        }catch Exception.Error(let type, let message){
+            print(message)
+        }catch{
+            print("error")
+        }
+
+        
+        
+        
+        
+        print("00- webViewDidStartLoad")
+    }
     
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
@@ -37,14 +105,15 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
         var htmlStr = webView.stringByEvaluatingJavaScript(from: "document.body.innerHTML")!
         do{
             let doc: Document = try! SwiftSoup.parse(htmlStr)
-            var element = try doc.select("div.ng-scope header").first()
+            var qTitle = try doc.select("div.ng-scope header").first()
             
 //            for element in elements.array() {
             
-            if element != nil{
-                try print("str = \(element?.html())")
+            if qTitle != nil{
+                try print("str = \(qTitle?.html())")
+                try qTitle?.append(qTitle!.html())
             }else{
-                print("element is nil,html is \(htmlStr)")
+//                print("element is nil,html is ")
             }
             
             
@@ -60,9 +129,19 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
         }
         print("00- webViewDidFinishLoad")
         
+        if qIndex==5{
+            myTimer.invalidate()
+            self.convertJSONtoString()
+        }
+        
     }
 
-    
+    func convertJSONtoString(){
+        if let string = qTitleJSON[0].rawString() {
+            //Do something you want
+            print(string)
+        }
+    }
     
     func loadHTML() -> Bool {
 //        https://exam.dentaltw.com/#/a/exam/105-1-6-79

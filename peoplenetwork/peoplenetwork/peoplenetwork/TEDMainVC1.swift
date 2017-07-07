@@ -35,6 +35,9 @@ class TEDMainVC1: UIViewController {
                 let v = snapshot.value as? NSDictionary
                 self.lbl1.text=v?["user"] as? String
                 })
+        case 2:
+            self.ref.child("RoomOrder").child("101").child("-KnsnUh_2_F_oXVDkUBX").removeValue()
+            
         default:
             print("aaa")
             
