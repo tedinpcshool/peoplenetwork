@@ -78,7 +78,8 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
                 json=JSON(["qTitle":tmpStr,"ans1":ans1Str,"ans2":ans2Str,"ans3":ans3Str,"ans4":ans4Str])
                 print("json = \(json)")
                 
-                qTitleJSON[qIndex]=JSON(json)
+//                qTitleJSON[qIndex]=JSON(json)
+                
             }else{
 //                print("element is nil,html is \(htmlStr)")
             }
@@ -131,7 +132,7 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
         
         if qIndex==5{
             myTimer.invalidate()
-            self.convertJSONtoString()
+//            self.convertJSONtoString()
         }
         
     }

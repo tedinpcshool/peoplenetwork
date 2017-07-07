@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qEX-18-nuM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wbd-Ra-6Da">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -464,6 +464,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AR6-Sz-uID" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2327" y="2484"/>
+        </scene>
+        <!--Bluetooth MainVC-->
+        <scene sceneID="jgk-tj-42f">
+            <objects>
+                <viewController id="Wbd-Ra-6Da" customClass="TEDBluetoothMainVC" customModule="peoplenetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="unf-ex-euE"/>
+                        <viewControllerLayoutGuide type="bottom" id="8TD-cf-fdo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B1U-FA-FYa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6p-ZB-Iyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1952" y="-151"/>
         </scene>
         <!--ParserVC-->
         <scene sceneID="35T-gv-caR">

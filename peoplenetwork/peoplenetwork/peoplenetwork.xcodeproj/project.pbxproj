@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8113B1171F0FC1F00087A8C2 /* TEDBluetoothMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113B1161F0FC1F00087A8C2 /* TEDBluetoothMainVC.swift */; };
 		811D56C91EF7F5CE00E78185 /* TEDMainVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D56C81EF7F5CE00E78185 /* TEDMainVC3.swift */; };
 		813BBF0D1EE199CE00A159F6 /* TEDMainVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BBF0C1EE199CE00A159F6 /* TEDMainVC1.swift */; };
 		813BBF0F1EE199DC00A159F6 /* TEDMainVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */; };
@@ -42,6 +43,7 @@
 		0AFE828EE98015453DCC6273 /* Pods_peoplenetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_peoplenetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172C703209DB416F66595370 /* Pods-peoplenetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peoplenetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-peoplenetwork/Pods-peoplenetwork.release.xcconfig"; sourceTree = "<group>"; };
 		52C98FB2AFF3E237EB0A1881 /* Pods-peoplenetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peoplenetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-peoplenetwork/Pods-peoplenetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		8113B1161F0FC1F00087A8C2 /* TEDBluetoothMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDBluetoothMainVC.swift; sourceTree = "<group>"; };
 		811D56C81EF7F5CE00E78185 /* TEDMainVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC3.swift; sourceTree = "<group>"; };
 		813BBF0C1EE199CE00A159F6 /* TEDMainVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC1.swift; sourceTree = "<group>"; };
 		813BBF0E1EE199DC00A159F6 /* TEDMainVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDMainVC2.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				815E80CC1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift */,
 				81FF7A611F03E03B00FE0EFD /* TEDMainVC4.swift */,
 				81B1201E1F066DCE00E65022 /* TEDHTMLParserVC.swift */,
+				8113B1161F0FC1F00087A8C2 /* TEDBluetoothMainVC.swift */,
 			);
 			path = peoplenetwork;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				815E80C91EFA946500D47C76 /* TEDTableVC.swift in Sources */,
 				815E80CD1EFAAABE00D47C76 /* TEDPersonTableViewCell.swift in Sources */,
 				8145390D1EE17A6E00BDCC29 /* TEDRegisterVC.swift in Sources */,
+				8113B1171F0FC1F00087A8C2 /* TEDBluetoothMainVC.swift in Sources */,
 				81694F931EDEDE6D00CEA036 /* ViewController.swift in Sources */,
 				815E80CB1EFA958500D47C76 /* TEDPerson.swift in Sources */,
 				81694F911EDEDE6D00CEA036 /* AppDelegate.swift in Sources */,
