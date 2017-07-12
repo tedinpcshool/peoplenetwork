@@ -17,7 +17,7 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
     
     var qTitleJSON:JSON!
     
-    
+    var strQ:String="["
     
     @IBOutlet weak var webView: UIWebView!
     
@@ -75,8 +75,14 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
 //                    try tmpStr=tmpStr+"$"+ans1.attr("aria-label")
                 }
                 
-                json=JSON(["qTitle":tmpStr,"ans1":ans1Str,"ans2":ans2Str,"ans3":ans3Str,"ans4":ans4Str])
-                print("json = \(json)")
+                strQ = strQ + "{\"答案\":\""+"\",\"題目\":\" "+qIndex+")"+tmpStr+"\\n(A)"+ans1Str+"\\n(B)"+ans2Str+"\\n(C)"+ans3Str+"\\n(D)"+ans4Str+"\"},"
+                
+                
+                print("strQ = \(strQ)")
+
+                
+//                json=JSON(["qTitle":tmpStr,"ans1":ans1Str,"ans2":ans2Str,"ans3":ans3Str,"ans4":ans4Str])
+//                print("json = \(json)")
                 
 //                qTitleJSON[qIndex]=JSON(json)
                 
@@ -120,6 +126,7 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
             
             
 //            }
+            
             qIndex+=1
             
 
@@ -130,7 +137,7 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
         }
         print("00- webViewDidFinishLoad")
         
-        if qIndex==5{
+        if qIndex==50{
             myTimer.invalidate()
 //            self.convertJSONtoString()
         }
