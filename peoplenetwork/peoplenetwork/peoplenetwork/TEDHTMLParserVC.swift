@@ -12,7 +12,12 @@ import SwiftyJSON
 
 class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
     var html : String!
-    var qIndex=1
+    
+    var qStartIndex=30
+    var qEndIndex=50
+    var url = "https://exam.dentaltw.com/#/a/exam/105-1-6-"
+    
+    var qIndex=30
     var myTimer:Timer!
     
     var qTitleJSON:JSON!
@@ -24,6 +29,7 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        qIndex = qStartIndex
         
         myTimer=Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(loadHTML), userInfo: nil, repeats: true)
         
@@ -75,10 +81,12 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
 //                    try tmpStr=tmpStr+"$"+ans1.attr("aria-label")
                 }
                 
-                strQ = strQ + "{\"答案\":\""+"\",\"題目\":\" "+qIndex+")"+tmpStr+"\\n(A)"+ans1Str+"\\n(B)"+ans2Str+"\\n(C)"+ans3Str+"\\n(D)"+ans4Str+"\"},"
+                strQ = strQ + "{\"答案\":\""+"\",\"題目\":\" " + String(qIndex) + ")" + tmpStr
+                
+                strQ = strQ + "\\n(A)" + ans1Str + "\\n(B)" + ans2Str + "\\n(C)" + ans3Str + "\\n(D)"+ans4Str+"\"},"
                 
                 
-                print("strQ = \(strQ)")
+                
 
                 
 //                json=JSON(["qTitle":tmpStr,"ans1":ans1Str,"ans2":ans2Str,"ans3":ans3Str,"ans4":ans4Str])
@@ -137,8 +145,9 @@ class TEDHTMLParserVC: UIViewController,UIWebViewDelegate {
         }
         print("00- webViewDidFinishLoad")
         
-        if qIndex==50{
+        if qIndex==qEndIndex{
             myTimer.invalidate()
+            print("strQ = \(strQ)")
 //            self.convertJSONtoString()
         }
         
